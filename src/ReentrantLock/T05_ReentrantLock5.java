@@ -21,7 +21,7 @@ public class T05_ReentrantLock5 extends Thread{
 
     //参数为false表示为不公平锁，则一个新来的线程想要获取锁时，可以直接和已经在等待的线程直接进行竞争，
     // 可能比已经在等待一段时间的线程更早的获取锁。
-    private static ReentrantLock lock  = new ReentrantLock(true);
+    private static ReentrantLock lock  = new ReentrantLock(false);
 
     public void run(){
         for(int i=0;i<100;i++){
