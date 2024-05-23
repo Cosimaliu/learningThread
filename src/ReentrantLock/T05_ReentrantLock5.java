@@ -23,12 +23,12 @@ public class T05_ReentrantLock5 extends Thread{
     // 可能比已经在等待一段时间的线程更早的获取锁。
     private static ReentrantLock lock  = new ReentrantLock(false);
 
-    public void run(){
-        for(int i=0;i<100;i++){
+    public void run() {
+        for (int i = 0; i < 100; i++) {
             lock.lock();
             try {
-                System.out.println(Thread.currentThread().getName()+"获得锁");
-            }finally {
+                System.out.println(Thread.currentThread().getName() + "获得锁");
+            } finally {
                 lock.unlock();
             }
         }
