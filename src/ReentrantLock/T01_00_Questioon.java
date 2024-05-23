@@ -1,9 +1,5 @@
 package ReentrantLock;
 
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.LockSupport;
-
 /**
  *要求用线程顺序打印A1B2C3....Z26
  */
