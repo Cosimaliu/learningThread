@@ -34,6 +34,7 @@ public class T04_ReentrantLock4 {
                 TimeUnit.SECONDS.sleep(5);
                 System.out.println("t2 end");
             }catch (InterruptedException e){
+                System.out.println("t2 中断等待");
                 e.printStackTrace();
             }finally {
                 lock.unlock();
