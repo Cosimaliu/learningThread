@@ -1,7 +1,5 @@
 package ReentrantLock.CustomerandBoss;
 
-import java.util.LinkedList;
-
 /**
  * 两个线程：一个输出基数，一个输出偶数
  */
